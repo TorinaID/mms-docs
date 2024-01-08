@@ -1,0 +1,316 @@
+---
+title: Koneksikan Facebook (Meta)
+description: Koneksikan Akun dengan Facebook Platform.
+---
+
+import ImageComponent from "@components/ImageComponent.astro";
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import ThemedImage from "@components/ThemedImage.astro";
+import { Image } from "astro:assets";
+import fbPagesImage from "@assets/images/mms-facebook-pages.png";
+import igBisnisImage from "@assets/images/mms-instagram-bisnis-status.png";
+import fbIgStatusImage from "@assets/images/mms-facebook-instagram-tertaut.png";
+import IgBisnisImage1 from "@assets/images/mms-instagram-bisnis-1.png";
+import IgBisnisImage2 from "@assets/images/mms-instagram-bisnis-2.png";
+import IgBisnisImage3 from "@assets/images/mms-instagram-bisnis-3.png";
+import IgBisnisImage4 from "@assets/images/mms-instagram-bisnis-4.png";
+import IgBisnisImage5 from "@assets/images/mms-instagram-bisnis-5.png";
+import IgBisnisImage6 from "@assets/images/mms-instagram-bisnis-6.png";
+import IgBisnisImage7 from "@assets/images/mms-instagram-bisnis-7.png";
+import IgBisnisImage8 from "@assets/images/mms-instagram-bisnis-8.png";
+import fbTautanImage0 from "@assets/images/mms-facebook-tautan-0.png";
+import fbTautanImage1 from "@assets/images/mms-facebook-tautan-1.png";
+import fbTautanImage2 from "@assets/images/mms-facebook-tautan-2.png";
+import fbTautanImage3 from "@assets/images/mms-facebook-tautan-3.png";
+import fbTautanImage4 from "@assets/images/mms-facebook-tautan-4.png";
+import fbTautanImage5 from "@assets/images/mms-facebook-tautan-5.png";
+import fbTautanImage6 from "@assets/images/mms-facebook-tautan-6.png";
+import fbTautanImage7 from "@assets/images/mms-facebook-tautan-7.png";
+import fbTautanImage8 from "@assets/images/mms-facebook-tautan-8.png";
+import fbTautanImage9 from "@assets/images/mms-facebook-tautan-9.png";
+import metaKoneksiImage1 from "@assets/images/mms-meta-koneksikan-1.png";
+import metaKoneksiImage2 from "@assets/images/mms-meta-koneksikan-2.png";
+import metaKoneksiImage3 from "@assets/images/mms-meta-koneksikan-3.png";
+import metaKoneksiImage4 from "@assets/images/mms-meta-koneksikan-4.png";
+import metaKoneksiImage5 from "@assets/images/mms-meta-koneksikan-5.png";
+
+:::caution
+Sebelum melakukan koneksi Akun Aplikasi dengan Akun Meta (Facebook dan Instagram), pastikan terlebih dahulu poin-poin dibawah ini sudah <u>**TERPENUHI**</u> :
+1. Pastikan sudah memiliki akun <a href="http://facebook.com/" target="_blank">**Facebook**</a> dan <a href="http://instagram.com/" target="_blank">**Instagram**</a>  yang akan di koneksikan pada aplikasi MMS
+2. Pastikan sudah login ke akun media sosial Facebook di browser yang sama dengan aplikasi MMS
+3. Pastikan sudah login ke akun media sosial instagram di browser yang sama dengan aplikasi MMS
+4. Akun Facebook harus sudah memiliki `Halaman` atau _Pages_
+<Image format="avif" quality="mid" src={fbPagesImage} alt="Gambar halaman Facebook."/>
+5. Akun Instagram harus sudah berstatus Akun bisnis ([Memastikan Akun Instagram Bisnis](#memastikan-akun-instagram-bisnis))
+<Image format="avif" quality="mid" src={igBisnisImage} alt="Gambar status Instagram Bisnis." />
+6. Hubungkan halaman facebook dengan akun bisnis instagram ([Tautkan Instagram ke Halaman Facebook](#tautkan-instagram-ke-halaman-facebook))
+<Image format="avif" quality="mid" src={fbIgStatusImage} alt="Gambar status Akun Tertaut Facebook dan Instagram." />
+:::
+
+## Koneksikan Akun Meta
+
+:::note
+Jika semua syarat di atas terpenuhi, proses koneksikan **`Akun Facebook`** ke Aplikasi akan secara langsung juga meng-koneksikan **`Akun Instagram`**.
+:::
+
+
+<Tabs>
+    <TabItem label="Langkah 1">
+    #### Tombol Koneksikan
+      Untuk menghubungkan Akun Meta dengan Akun aplikasi adalah Dengan menekan tombol `Koneksikan` untuk Facebook di halaman Dashboard **`[1]`**, seperti berikut:
+      <Image
+        format="avif"
+        quality="mid"
+        src={metaKoneksiImage1}
+        alt="Gambar halaman Dashboard untuk koneksikan akun Meta."
+      />
+    </TabItem>
+    <TabItem label="Langkah 2">
+    #### Konfirmasi Akun
+      Setelah tombol **`Koneksikan`** di tekan, akan muncul layar untuk mengkonfirmasi akun Facebook yang digunakan.
+      <Image
+        format="avif"
+        quality="mid"
+        src={metaKoneksiImage2}
+        alt="Gambar halaman Dashboard untuk koneksikan akun Meta."
+      />
+    </TabItem>
+    <TabItem label="Langkah 3">
+    #### Opsi Atur Akun
+      <Image
+        format="avif"
+        quality="mid"
+        src={metaKoneksiImage3}
+        alt="Gambar halaman Dashboard untuk koneksikan akun Meta."
+      />
+    </TabItem>
+    <TabItem label="Langkah 4">
+    #### Info Terkoneksi
+      <Image
+        format="avif"
+        quality="mid"
+        src={metaKoneksiImage4}
+        alt="Gambar halaman Dashboard untuk koneksikan akun Meta."
+      />
+    </TabItem>
+    <TabItem label="Langkah 5">
+    #### Info Tombol Terupdate
+      <Image
+        format="avif"
+        quality="mid"
+        src={metaKoneksiImage5}
+        alt="Gambar halaman Dashboard untuk koneksikan akun Meta."
+      />
+    </TabItem>
+</Tabs>
+
+## Memastikan Akun Instagram Bisnis
+
+Untuk memastikan bahwa akun Instagram sudah menjadi Akun Bisnis, ikuti langkah-langkah berikut :
+
+<Tabs>
+    <TabItem label="Langkah 1">
+      #### Akses Menu Pengaturan Instagram
+
+      Tekan menu `Lainnya` yang berada pada bagian kiri paling bawah halaman instagram (1), lalu tekan menu `Pengaturan` (2)
+
+      <Image
+        format="avif"
+        quality="mid"
+        src={IgBisnisImage1}
+        alt="Gambar akses menu pengaturan Instagram."
+      />
+    </TabItem>
+    <TabItem label="Langkah 2">
+      #### Akses Menu Jenis Akun
+
+      Setelah menu `Pengaturan` di atas di tekan, akan muncul halaman pengaturan seperti dibawah, lalu akses menu `Jenis dan Fitur Akun`.
+
+      <Image
+        format="avif"
+        quality="mid"
+        src={IgBisnisImage2}
+        alt="Gambar akses menu Jenis dan Fitur Akun."
+      />
+
+      Lalu pada halaman `Jenis dan Fitur Akun`, pada bagian `Jenis Akun`, tekan menu `Beralih ke akun profesional`
+
+      <Image
+        format="avif"
+        quality="mid"
+        src={IgBisnisImage3}
+        alt="Gambar akses menu Beralih ke akun profesional."
+      />
+
+    </TabItem>
+    <TabItem label="Langkah 3">
+      #### Pilih Kriteria Bisnis
+
+      Pada halaman ini, pilih `Business` sebagai kriteria yang cocok untuk organisasi
+
+      <Image
+        format="avif"
+        quality="mid"
+        src={IgBisnisImage4}
+        alt="Gambar kriteria bisnis."
+      />
+
+      <Image
+        format="avif"
+        quality="mid"
+        src={IgBisnisImage5}
+        alt="Gambar kriteria bisnis untuk Business."
+      />
+
+    </TabItem>
+    <TabItem label="Langkah 4">
+      #### Pilih Kategori Bisnis
+
+      Di halaman ini pilih kategori yang cocok dengan organisasi, misal `Government Organization`.
+
+      <Image
+        format="avif"
+        quality="mid"
+        src={IgBisnisImage6}
+        alt="Gambar kategori bisnis."
+      />
+
+    </TabItem>
+    <TabItem label="Langkah 5">
+      #### Tinjau Info Kontak
+
+      Di halaman ini diminta untuk melengkapi informasi kontak, hal ini bersifat opsional tetapi disarankan untuk melengkapi data-data tersebut.
+
+      <Image
+        format="avif"
+        quality="mid"
+        src={IgBisnisImage7}
+        alt="Gambar Tinjauan info kontak."
+      />
+    </TabItem>
+    <TabItem label="Langkah 6">
+      #### Proses Ubah Akun Bisnis Selesai
+
+      Halaman pemberitahuan bahwa akun instagram sudah di ubah ke Akun Bisnis
+
+      <Image
+        format="avif"
+        quality="mid"
+        src={IgBisnisImage8}
+        alt="Gambar Akun sudah berubah ke akun Bisnis."
+      />
+
+    </TabItem>
+</Tabs>
+
+
+## Tautkan Instagram ke Halaman Facebook
+<Tabs>
+    <TabItem label="Langkah 1">
+      #### Akses Halaman Facebook
+
+      Dari halaman utama Facebook, akses menu halaman Facebook (0) yang telah dibuat (posisi menu berada di _dropdown_ pada bagian atas kanan layar, dekat profil)
+
+      <Image
+        format="avif"
+        quality="mid"
+        src={fbTautanImage0}
+        alt="Gambar akses menu halaman facebook."
+      />
+
+      atau dari halaman utama **Facebook**, juga bisa di akses menu Halaman yang berada pada bagian bawah kanan menu _Sidebar_ (1).
+
+      <Image
+        format="avif"
+        quality="mid"
+        src={fbTautanImage1}
+        alt="Gambar akses halaman facebook."
+      />
+
+    </TabItem>
+    <TabItem label="Langkah 2">
+      #### Pilih Pengaturan Halaman
+
+      Pada Halaman Facebook pilih menu `Pengaturan` (2), biasanya menu tersebut dalam kondisi _disabled_
+
+      <Image
+        format="avif"
+        quality="mid"
+        src={fbTautanImage2}
+        alt="Gambar akses menu Pengaturan Halaman."
+      />
+
+      Setelah dipilih akan muncul jendela konfirmasi untuk beralih profil ke Halaman Facebook yang dituju.
+
+      <Image
+        format="avif"
+        quality="mid"
+        src={fbTautanImage3}
+        alt="Gambar akses konfirmasi beralih profil ke Halaman."
+      />
+
+    </TabItem>
+    <TabItem label="Langkah 3">
+      #### Tautkan Akun
+
+      Pada Pengaturan Halaman Facebook, pilih menu `Akun Tertaut` (3).
+
+      <Image
+        format="avif"
+        quality="mid"
+        src={fbTautanImage4}
+        alt="Gambar pilih menu Akuin Tertaut."
+      />
+
+      Pada layar `Akun Tertaut` secara _default_ menu Instagram akan dipilih. Tekan tombol `Hubungkan Akun` untuk menautkan Akun Instagram ke Halaman Facebook
+
+      <Image
+        format="avif"
+        quality="mid"
+        src={fbTautanImage5}
+        alt="Gambar tombol tautkan akun Instagram dengan Halaman."
+      />
+
+      Lalu akan muncul layar konfirmasi untuk menautkan Halaman Facebook dengan Akun Instagram
+
+      <Image
+        format="avif"
+        quality="mid"
+        src={fbTautanImage6}
+        alt="Gambar layar konfirmasi tautan Halaman."
+      />
+
+      Kemudian layar pilih pesan pengaturan dari Instagram akan muncul.
+
+      <Image
+        format="avif"
+        quality="mid"
+        src={fbTautanImage7}
+        alt="Gambar layar pesan pengaturan Instagram."
+      />
+
+      Biasanya akan dikonfirmasi ulang untuk melakukan login ke Akun Facebook seperti gambar berikut:
+
+      <Image
+        format="avif"
+        quality="mid"
+        src={fbTautanImage8}
+        alt="Gambar relogin ke akun Facebook."
+      />
+
+      Kemudian akan mumcul layar konfirmasi bahwa akun Instagram telah terhubung dengan Halaman Facebook yang ditentukan
+
+      <Image
+        format="avif"
+        quality="mid"
+        src={fbTautanImage9}
+        alt="Gambar layar konfirmasi berhasil menautkan Akun Instagram."
+      />
+
+    </TabItem>
+</Tabs>
+
+
+
+
+<ImageComponent />

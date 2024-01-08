@@ -1,0 +1,132 @@
+---
+title: Menu
+description: List of Menus for Operators and Supervisor.
+---
+
+import ImageComponent from "@components/ImageComponent.astro";
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import ThemedImage from "@components/ThemedImage.astro";
+import { Image } from "astro:assets";
+import homeOpImage from "@assets/images/mms-operator-home.png";
+import dashboardOpImage from "@assets/images/mms-operator-dashboard.png";
+import marsOpImage from "@assets/images/mms-operator-mars.png";
+import asetOpImage from "@assets/images/mms-operator-daftar-aset.png";
+import homeSpvImage from "@assets/images/mms-supervisor-home.png";
+import dashboardSpvImage from "@assets/images/mms-supervisor-dashboard.png";
+import marsSpvImage from "@assets/images/mms-supervisor-mars.png";
+import tabulasiSpvImage from "@assets/images/mms-supervisor-tabulasi.png";
+
+The menu in the application is displayed based on the Role or Authorization given. For the Operator Menu, the following will appear:
+
+```
+📦 Operator Menu
+├──  Home
+├──  Dashboard
+├──  Kegiatan Mars
+└──  Pengaturan
+   └──  Daftar Aset
+```
+
+For the Supervisor (Central and Regional), the following Menu will appear:
+
+```
+📦 Supervisor Menu
+├──  Home
+├──  Dashboard
+├──  Tabulasi Data
+└──  Kegiatan Mars
+```
+
+## Home Menu
+
+<Tabs>
+    <TabItem label="Operator">
+      <Image
+        format="avif"
+        quality="mid"
+        src={homeOpImage}
+        alt="Image of the Home menu for Operators."
+      />
+    </TabItem>
+    <TabItem label="Supervisor">
+      <Image
+        format="avif"
+        quality="mid"
+        src={homeSpvImage}
+        alt="Image of the Home menu for Supervisors."
+      />
+    </TabItem>
+</Tabs>
+
+
+## Dashboard Menu
+
+<Tabs>
+    <TabItem label="Operator">
+     <Image
+        format="avif"
+        quality="mid"
+        src={dashboardOpImage}
+        alt="Image of the Dashboard menu for Operators."
+      />
+    </TabItem>
+    <TabItem label="Supervisor">
+      <Image
+        format="avif"
+        quality="mid"
+        src={dashboardSpvImage}
+        alt="Image of the Dashboard menu for Supervisors."
+      />
+    </TabItem>
+</Tabs>
+
+
+## Mars Activity Menu
+
+<Tabs>
+    <TabItem label="Operator">
+     <Image
+        format="avif"
+        quality="mid"
+        src={marsOpImage}
+        alt="Image of the Mars menu for Operator."
+      />
+    </TabItem>
+    <TabItem label="Supervisor">
+      <Image
+        format="avif"
+        quality="mid"
+        src={marsSpvImage}
+        alt="Image of the Mars menu for Supervisor."
+      />
+    </TabItem>
+</Tabs>
+
+## Settings > List of Assets Menu
+
+<Tabs>
+    <TabItem label="Operator">
+     <Image
+      format="avif"
+      quality="mid"
+      src={asetOpImage}
+      alt="Image of the List of Assets menu for Operator."
+    />
+    </TabItem>
+</Tabs>
+
+## Data Tabulation Menu
+
+<Tabs>
+    <TabItem label="Supervisor">
+      <Image
+        format="avif"
+        quality="mid"
+        src={tabulasiSpvImage}
+        alt="Image of Data Tabulation menu for Supervisor."
+      />
+    </TabItem>
+</Tabs>
+
+
+<ImageComponent />

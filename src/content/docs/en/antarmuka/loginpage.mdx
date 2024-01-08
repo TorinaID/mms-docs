@@ -1,0 +1,48 @@
+---
+title: Login Page
+description: The Login Page.
+---
+
+import ImageComponent from "@components/ImageComponent.astro";
+import ThemedImage from "@components/ThemedImage.astro";
+import { Image } from "astro:assets";
+import loginImage from "@assets/images/mms-login-page.png";
+
+This page contains an Authentication form to access the application according to the Authorization given.
+
+To log in to the application, enter the <kbd> Email/Username </kbd> and <kbd> Password </kbd>. By default, the username will correspond to a combination of each region's name with a default password that always changes. Therefore, it is recommended to change the password immediately, following the Change Password instructions.
+
+:::note
+The combination of <kbd> Email/Username </kbd> is usually a mix of REGIONAL LEVEL + REGION NAME (for example: bnnpsulawesiutara, bnnkkarimun, bnnkotalhokseumawe). Ask your Central Supervisor for your default <kbd> Password </kbd>.
+:::
+
+<Image
+  format="avif"
+  quality="mid"
+  src={loginImage}
+  alt="Image of the Login Page."
+/>
+
+## Roles / Groups
+
+This application is divided into 3 groups (Roles/Groups), namely:
+
+1. Central Supervisor
+2. Regional Supervisor, and
+3. Operator
+
+### Central and Regional Supervisors
+
+The role of **Supervisor**, both Central and Regional, is to collect all reports submitted by the Regions in the form of Periods. The scope for the Central Supervisor encompasses all BNN Provincial, District, and City Regions, while the scope for the Regional Supervisor includes Operators in each BNN Province, covering Operators in BNN Provincial, District, and City within each respective Province.
+
+### Operator
+
+The scope for the **Operator** includes asset owners or social media managers in BNN RI, BNN Province, BNN District, and BNN City.
+
+The Operator's role is to report social media activities and other activities required by BNN RI in delivering messages and socialization.
+
+In social media activities, users simply connect their Social Media Assets (Facebook, Instagram, X, TikTok, YouTube) with their User Account as the social media asset manager. Other activities like MARS, Socialization, and periodic activities require manual data entry into forms provided in this application.
+
+{/* ![image](@assets/images/mms-login-page.png) */}
+
+<ImageComponent />

@@ -1,0 +1,26 @@
+---
+title: Landing Page
+description: Halaman Landing Page.
+---
+
+import ImageComponent from "@components/ImageComponent.astro";
+import ThemedImage from "@components/ThemedImage.astro";
+import { Image } from "astro:assets";
+import landingImage from "@assets/images/mms-landing-page.png";
+
+The landing page is specially designed to provide users with a brief overview of the MMS application. It also displays additional information such as social media posts based on the number of views or likes, from posts made by both BNN Central and regional offices.
+
+Additionally, the landing page serves to increase the conversion rate (the effectiveness and success rate of a website in promoting its business).
+
+### Proceed to Login Page
+
+By pressing the [<kbd> Masuk -> </kbd>] button on the landing page, you will directly access the [Login Page](/en/antarmuka/loginpage/)
+
+<Image
+  format="avif"
+  quality="mid"
+  src={landingImage}
+  alt="Image of the Landing Page."
+/>
+
+<ImageComponent />

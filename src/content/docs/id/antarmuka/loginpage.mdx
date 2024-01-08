@@ -1,0 +1,48 @@
+---
+title: Halaman Masuk
+description: Halaman awal untuk Masuk ke aplikasi.
+---
+
+import ImageComponent from "@components/ImageComponent.astro";
+import ThemedImage from "@components/ThemedImage.astro";
+import { Image } from "astro:assets";
+import loginImage from "@assets/images/mms-login-page.png";
+
+Pada halaman ini terdapat form Otentikasi agar dapat mengakses aplikasi sesuai dengan Otorisasi yang telah diberikan.
+
+Untuk dapat masuk ke aplikasi, masukan data <kbd> `Email/Username` </kbd> dan <kbd> `Password` </kbd>, secara default nama pengguna akan sesuai dengan kombinasi nama wilayah masing-masing dengan password default yang akan selalu berubah. jadi disarankan untuk langsung mengubah password, sesuai petunjuk Ubah Password.
+
+:::note
+Kombinasi <kbd> `Email/Username` </kbd> biasanya gabungan dari `TINGKATAN WILAYAH` + `NAMA WILAYAH` (misal: _bnnpsulawesiutara_, _bnnkkarimun_. _bnnkotalhokseumawe_), Tanyakan <kbd> `Password` </kbd> default Anda ke Supervisor Pusat.
+:::
+
+<Image
+  format="avif"
+  quality="mid"
+  src={loginImage}
+  alt="Gambar halaman Login."
+/>
+
+## Peran / Kelompok
+
+Aplikasi ini dibagi menjadi 3 kelompok (Roles/Group), antara lain :
+
+1. Supervisor Pusat
+2. Supervisor Daerah, dan
+3. Operator
+
+### Supervisor Pusat dan Daerah
+
+Role **Supervisor** baik Pusat dan Daerah bertugas menampung semua laporan yang telah disampaikan oleh Wilayah dalam bentuk Periode. Lingkup untuk Supervisor Pusat adalah seluruh Wilayah BNN Propinsi, Kabupaten dan Kota, sedangkan lingkup untuk Supervisor Daerah adalah Operator yang berada di setiap BNN Propinsi dengan lingkup meliputi Operator BNN Propinsi, Kabupaten dan Kota yang berada di Masing-masing Propinsi saja.
+
+### Operator
+
+Lingkup untuk **Operator** adalah pemilik aset atau pengelola media sosial baik di BNN RI, BNN Propinsi, BNN Kabupater maupun BNN Kota.
+
+Role Operator bertugas melaporkan kegiatan bermedia-sosial serta kegiatan lain yang dibutuhkan oleh BNN RI dalam menyampaikan pesan serta sosialisasi.
+
+Dalam bermedia-sosial, pengguna cukup menghubungkan Aset Media Sosial (Facebook, Instagram, X, Tiktok, Youtube) dengan Akun Pengguna sebagai pengelola aset media sosial, sedangkan kegiatan lain seperti MARS, Sosialisasi, dan kegiatan yang bersifat periodik perlu dilakukan pengisian data secara manual ke dalam form-form yang telah disediakan di dalam aplikasi ini.
+
+{/* ![image](@assets/images/mms-login-page.png) */}
+
+<ImageComponent />

@@ -1,0 +1,131 @@
+---
+title: Sosialisasi Mars BNN
+description: Laporan mengenai sosialisasi Mars BNN.
+---
+
+
+import ImageComponent from "@components/ImageComponent.astro";
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import ThemedImage from "@components/ThemedImage.astro";
+import { Image } from "astro:assets";
+import marsImage1 from "@assets/images/mms-operator-mars-01.png";
+import marsImage2 from "@assets/images/mms-operator-mars-02.png";
+import marsImage3 from "@assets/images/mms-operator-mars-03.png";
+import marsImage4 from "@assets/images/mms-operator-mars-04.png";
+import marsImage5 from "@assets/images/mms-operator-mars-05.png";
+import marsImage6 from "@assets/images/mms-operator-mars-06.png";
+import marsImage7 from "@assets/images/mms-operator-mars-07.png";
+import marsImage8 from "@assets/images/mms-operator-mars-08.png";
+
+Sosialisasi MARS BNN adalah Laporan aktivitas sosialisasi Mars BNN yang dilaksanakan oleh Humas Badan Narkotika Nasional Propinsi, Kabupaten dan Kota.
+
+---
+## Halaman Laporan Mars
+---
+
+Untuk mengakses halaman MARS, pilih Menu **`Kegiatan Mars`** pada bagian kiri layar atau pada bagian isi di layar aplikasi
+
+<Image
+  format="avif"
+  quality="mid"
+  src={marsImage1}
+  alt="Gambar menu Mars untuk Operator."
+/>
+
+### Tabel Laporan Mars
+
+Halaman MARS terdiri dari daftar (_list_) kegiatan berdasarkan periode laporan yang sudah ditentukan yaitu periode Jumat - Kamis. terdiri dari kolom-kolom :
+- **Periode**: Menampilkan data periode pengisian data yang diatur setiap hari **Jumat** sampai dengan **Kamis**
+- **Radio**: Data pemutaran Mars BNN melalui siaran radio
+- **Sosialisasi**: Data Sosialisasi yang dilakukan di Sekolah sampai dengan Universitas, antara lain:
+  - TK,
+  - SD,
+  - SMP,
+  - SMA,
+  - Universitas
+- **Kegiatan**: Data kegiatan lainnya
+- **Total**: jumlah keseluruhan dari kegiatan dalam 1 periode
+- **Terakhir Update**: Data tanggal pengisian data kegiatan
+- **Keterangan**: menginformasikan pada periode tersebut terdapat kegiatan atau tidak ada kegiatan
+
+<Image
+  format="avif"
+  quality="mid"
+  src={marsImage2}
+  alt="Gambar halaman Mars untuk Operator."
+/>
+
+### Kolom Saring
+Pada tabel dalam aplikasi memiliki fitur untuk melakukan penyaringan data seperti Kolom dan Pencarian data
+
+<Image
+  format="avif"
+  quality="mid"
+  src={marsImage3}
+  alt="Gambar filter pada tabel Mars untuk Operator."
+/>
+
+---
+## Pengisian Data Mars
+---
+### Ketentuan Pengisian Data
+> Ketentuan Data ini diharapkan untuk dapat membantu dan memudahkan wilayah untuk membuatkan laporan dan agar memudahkan Admin untuk me-_monitor_ kegiatan
+
+:::caution
+1. Seluruh data dibagi berdasarkan hari dalam periode, yaitu data mulai __hari Jumat__, sampai dengan data __hari kamis__
+2. __Tanggal kegiatan__ adalah tanggal dimana kegiatan dilaksanakan, sedangkan __Tanggal Update__ adalah tanggal pengisian kegiatan ke dalam aplikasi
+3. __Penambahan__ data __Periode Baru__ hanya dapat dilakukan jika periode sebelumnya sudah di konfirmasi __terisi dengan data kegiatan__ atau __terkonfirmasi bahwa tidak ada kegiatan__.
+   > Pada proses ini data Periode sebelumnya sudah tidak dapat diubah ataupun dihapus
+4. __Ubah__ data Periode __hanya bisa__ dilakukan pada data __periode yang sedang berjalan__ atau data __periode terakhir__.
+:::
+
+### Tambah Data Periode
+
+Untuk menambahkan data Periode Baru, tekan tombol <kbd>Tambah Data</kbd> pada gambar dibawah.
+
+<Image
+  format="avif"
+  quality="mid"
+  src={marsImage4}
+  alt="Gambar tambah data Mars untuk Operator."
+/>
+> Sesuai dengan ketentuan data [diatas](#ketentuan-pengisian-data) bahwa dengan menekan tombol <kbd>Tambah Data</kbd>, sistem akan meminta konfirmasi proses penambahan data, karena data pada Periode sebelumnya sudah __tidak dapat diubah kembali__.
+
+<Image
+  format="avif"
+  quality="mid"
+  src={marsImage5}
+  alt="Gambar konfirmasi tambah data Mars untuk Operator."
+/>
+
+### Tambahkan Data Kegiatan
+
+Setelah menekan tombol <kbd>YES</kbd> pada layar sebelumnya. lalu akan muncul layar untuk dapat mengisikan kegiatan-kegiatan seperti :
+- Memutar MARS di Radio
+- Sosialisasi MARS di sekolah dan universitas, dan
+- Kegiatan lainnya
+
+<Image
+  format="avif"
+  quality="mid"
+  src={marsImage6}
+  alt="Gambar konfirmasi tambah data Mars untuk Operator."
+/>
+Pada layar di atas, terdapat Tabulasi Radio, TK, SD, SMP, SMA, Universitas dan Kegiatan. Pada setiap tabulasi terdapat tombol seperti <kbd>TAMBAH DATA</kbd>, <kbd>UBAH DATA</kbd>, dan <kbd>HAPUS DATA</kbd>, untuk menambah data tekan tombol <kbd>TAMBAH DATA</kbd> akan muncul tampilan seperti di bawah ini
+
+#### Isikan Tanggal Kegiatan
+
+<Image
+  format="avif"
+  quality="mid"
+  src={marsImage7}
+  alt="Gambar konfirmasi tambah data Mars untuk Operator."
+/>
+
+#### Isikan Judul Kegiatan
+<Image
+  format="avif"
+  quality="mid"
+  src={marsImage8}
+  alt="Gambar konfirmasi tambah data Mars untuk Operator."
+/>

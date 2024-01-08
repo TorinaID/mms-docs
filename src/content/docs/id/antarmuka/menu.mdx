@@ -1,0 +1,130 @@
+---
+title: Daftar Menu
+description: Daftar Menu untuk Operator dan Supervisor.
+---
+
+import ImageComponent from "@components/ImageComponent.astro";
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import ThemedImage from "@components/ThemedImage.astro";
+import { Image } from "astro:assets";
+import homeOpImage from "@assets/images/mms-operator-home.png";
+import dashboardOpImage from "@assets/images/mms-operator-dashboard.png";
+import marsOpImage from "@assets/images/mms-operator-mars.png";
+import asetOpImage from "@assets/images/mms-operator-daftar-aset.png";
+import homeSpvImage from "@assets/images/mms-supervisor-home.png";
+import dashboardSpvImage from "@assets/images/mms-supervisor-dashboard.png";
+import marsSpvImage from "@assets/images/mms-supervisor-mars.png";
+import tabulasiSpvImage from "@assets/images/mms-supervisor-tabulasi.png";
+
+Menu pada aplikasi yang tertampil berdasarkan Role atau Otorisasi yang diberikan, untuk Menu Operator yang akan tampil adalah sebagai berikut:
+
+```
+📦 Operator Menu
+├──  Home
+├──  Dashboard
+├──  Kegiatan Mars
+└──  Pengaturan
+   └──  Daftar Aset
+```
+
+Sedangkan untuk Supervisor (Pusat dan Daerah), Menu yang akan tampil adalah sebagai berikut:
+
+```
+📦 Supervisor Menu
+├──  Home
+├──  Dashboard
+├──  Tabulasi Data
+└──  Kegiatan Mars
+```
+
+## Menu Home
+
+<Tabs>
+    <TabItem label="Operator">
+      <Image
+        format="avif"
+        quality="mid"
+        src={homeOpImage}
+        alt="Gambar menu Home Operator."
+      />
+    </TabItem>
+    <TabItem label="Supervisor">
+      <Image
+        format="avif"
+        quality="mid"
+        src={homeSpvImage}
+        alt="Gambar menu Home Supervisor."
+      />
+    </TabItem>
+</Tabs>
+
+## Menu Dashboard
+
+<Tabs>
+    <TabItem label="Operator">
+     <Image
+        format="avif"
+        quality="mid"
+        src={dashboardOpImage}
+        alt="Gambar menu Dashboard Operator."
+      />
+    </TabItem>
+    <TabItem label="Supervisor">
+      <Image
+        format="avif"
+        quality="mid"
+        src={dashboardSpvImage}
+        alt="Gambar menu Dashboard Supervisor."
+      />
+    </TabItem>
+</Tabs>
+
+## Menu Kegiatan Mars
+
+<Tabs>
+    <TabItem label="Operator">
+     <Image
+        format="avif"
+        quality="mid"
+        src={marsOpImage}
+        alt="Gambar menu Mars Operator."
+      />
+    </TabItem>
+    <TabItem label="Supervisor">
+      <Image
+        format="avif"
+        quality="mid"
+        src={marsSpvImage}
+        alt="Gambar menu Mars Supervisor."
+      />
+    </TabItem>
+</Tabs>
+
+## Menu Pengaturan > Daftar Aset
+
+<Tabs>
+    <TabItem label="Operator">
+     <Image
+      format="avif"
+      quality="mid"
+      src={asetOpImage}
+      alt="Gambar menu Daftar Aset Operator."
+    />
+    </TabItem>
+</Tabs>
+
+## Menu Tabulasi Data
+
+<Tabs>
+    <TabItem label="Supervisor">
+      <Image
+        format="avif"
+        quality="mid"
+        src={tabulasiSpvImage}
+        alt="Gambar menu Tabulasi Data Supervisor."
+      />
+    </TabItem>
+</Tabs>
+
+
+<ImageComponent />
